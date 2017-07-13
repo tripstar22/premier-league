@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CleanSheetsComponent } from './clean-sheets.component';
+import { LukakuGraphsComponent } from './lukaku-graphs.component';
 
-describe('CleanSheetsComponent', () => {
-  let component: CleanSheetsComponent;
-  let fixture: ComponentFixture<CleanSheetsComponent>;
+describe('LukakuGraphsComponent', () => {
+  let component: LukakuGraphsComponent;
+  let fixture: ComponentFixture<LukakuGraphsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CleanSheetsComponent ]
+      declarations: [ LukakuGraphsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CleanSheetsComponent);
+    fixture = TestBed.createComponent(LukakuGraphsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

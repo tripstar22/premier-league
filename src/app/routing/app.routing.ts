@@ -1,15 +1,15 @@
 import { Routes, RouterModule } from '@angular/router';
-import { StatCategoriesComponent } from '../components/stat-categories/stat-categories.component';
-import { CleanSheetsComponent } from '../components/clean-sheets/clean-sheets.component';
+import { ArticleCategoriesComponent } from '../components/article-categories/article-categories.component';
+import { LukakuComponent } from '../components/features/lukaku/lukaku.component';
 
 const APP_ROUTES: Routes = [
 	{
 		path: '',
-		component: StatCategoriesComponent
+		component: ArticleCategoriesComponent
 	},
 	{
-		path: 'clean-sheets',
-		component: CleanSheetsComponent
+		path: 'lukaku',
+		component: LukakuComponent
 	}
 ];
 

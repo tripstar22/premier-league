@@ -5,13 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdDatepickerModule, MdToolbarModule, MdListModule, MdCardModule, MdButtonModule } from '@angular/material';
-import { D3Service } from 'd3-ng2-service';
 
 import { AppComponent } from './app.component';
-import { StatCategoriesComponent } from './components/stat-categories/stat-categories.component';
 import { NavComponent } from './components/nav/nav.component';
-import { TopScorerComponent } from './components/top-scorer/top-scorer.component';
-import { CleanSheetsComponent } from './components/clean-sheets/clean-sheets.component';
+import { LukakuComponent } from './components/features/lukaku/lukaku.component';
+import { LukakuGraphsComponent } from './components/d3/lukaku-graphs/lukaku-graphs.component';
+import { ArticleCategoriesComponent } from './components/article-categories/article-categories.component';
 
 import { routing } from './routing/app.routing';
 import { AppHttpService } from './services/app-http.service';
@@ -19,10 +18,10 @@ import { AppHttpService } from './services/app-http.service';
 @NgModule({
 	declarations: [
 		AppComponent,
-		StatCategoriesComponent,
 		NavComponent,
-		TopScorerComponent,
-		CleanSheetsComponent
+		LukakuComponent,
+		LukakuGraphsComponent,
+		ArticleCategoriesComponent
 	],
 	imports: [
 		BrowserModule,
@@ -37,7 +36,6 @@ import { AppHttpService } from './services/app-http.service';
 		routing
 	],
 	providers: [
-		D3Service,
 		AppHttpService
 	],
 	bootstrap: [AppComponent]

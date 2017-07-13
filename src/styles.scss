@@ -2,3 +2,7 @@
 // import theme to help angular-material work as expected
 // this is recommened in angular-material docs
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+rect.bar {
+	fill: steelblue;
+}
